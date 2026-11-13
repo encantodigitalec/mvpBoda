@@ -1,0 +1,60 @@
+:root {
+        		      /* =========================================================
+        		         PALETA DE COLORES PARAMETRIZABLE
+        		         Modifica estos valores para cambiar el estilo general.
+        		         Paleta actual: verde profundo, verde salvia, taupe,
+        		         crema y blanco, inspirada en invitaciones naturales.
+        		         ========================================================= */
+        		      --color-fondo: #ece9df;
+        		      --color-fondo-2: #d9d6cb;
+        		      --color-principal: #185c28;
+        		      --color-secundario: #7f9b7f;
+        		      --color-acento: #9a8e7f;
+        		      --color-texto: #2d2d2a;
+        		      --color-texto-suave: rgba(45, 45, 42, 0.72);
+        		      --color-tarjeta: rgba(247, 245, 238, 0.78);
+        		      --color-tarjeta-solida: #f7f5ee;
+        		      --color-blanco: #ffffff;
+        		      --color-borde: rgba(75, 79, 62, 0.22);
+        		      --sombra: 0 24px 70px rgba(45, 45, 42, 0.16);
+        		      --sombra-suave: 0 14px 34px rgba(45, 45, 42, 0.09);
+        		      --radio: 34px;
+        		
+        		      /* =========================================================
+        		         BOTÓN DEL SOBRE INICIAL
+        		         Solo afecta el botón que dice “Ver invitación”.
+        		         ========================================================= */
+        		      --boton-sobre-fondo: #185c28;
+        		      --boton-sobre-fondo-2: #7f9b7f;
+        		      --boton-sobre-texto: #ffffff;
+        		      --boton-sobre-sombra: 0 14px 26px rgba(24, 92, 40, 0.28);
+        		
+        		      /* =========================================================
+        		         BOTONES GENERALES
+        		         Afectan botones como “Confirmar por WhatsApp”.
+        		         ========================================================= */
+        		      --boton-general-fondo: #185c28;
+        		      --boton-general-fondo-2: #7f9b7f;
+        		      --boton-general-hover: #12451e;
+        		      --boton-general-texto: #ffffff;
+        		      --boton-general-sombra: 0 14px 28px rgba(24, 92, 40, 0.26);
+        		
+        		      /* =========================================================
+        		         BOTONES SECUNDARIOS
+        		         Afectan botones como “Ver ubicación”.
+        		         ========================================================= */
+        		      --boton-secundario-fondo: rgba(255, 255, 255, 0.72);
+        		      --boton-secundario-texto: #185c28;
+        		      --boton-secundario-borde: rgba(24, 92, 40, 0.24);
+        		
+        		      /* =========================================================
+        		         SOBRE INICIAL
+        		         Colores del sobre, carta, solapa y sello.
+        		         ========================================================= */
+        		      --sobre-carta: #fbfaf5;
+        		      --sobre-cuerpo: #f2efe6;
+        		      --sobre-cuerpo-oscuro: #d7d1c4;
+        		      --sobre-solapa: #d8d1c1;
+        		      --sobre-solapa-oscura: #a99b8c;
+        		      --sobre-sello: #9a8e7f;
+        		    }
