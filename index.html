@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación de Boda | Camila & Daniel</title>
+    <link rel="icon" type="image/png" href="assets/icons/anillos.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    <main class="phone-frame">
+        <!-- AUDIO PARAMETRIZABLE DE LA INVITACIÓN -->
+        <audio id="weddingAudio" preload="none" loop>
+            <source src="assets/audio/cancion.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- =========================================================
+         TEXTO PARAMETRIZABLE: pantalla inicial del sobre
+         ========================================================= -->
+        <section class="opening-screen" id="openingScreen">
+            <div class="opening-content">
+                <p class="opening-label">
+                    <span>Tienes una</span>
+                    <span>invitación especial</span>
+                </p>
+
+                <button class="envelope-button" id="openInvitation" type="button" aria-label="Ver invitación de boda">
+                    <span class="envelope-card" aria-hidden="true">
+            <span class="envelope-letter">
+              <span class="initials">C <small>&</small> D</span>
+                    <span class="letter-subtitle">Nuestra boda</span>
+                    </span>
+
+                    <span class="envelope-body"></span>
+                    <span class="envelope-flap"></span>
+                    <span class="envelope-pocket"></span>
+                    <span class="envelope-text">Ver invitación</span>
+                    <span class="wax-seal">❤</span>
+                    </span>
+                </button>
+
+                <p class="opening-help">Toca el sobre para abrir tu invitación.</p>
+            </div>
+        </section>
+
+        <div class="invitation-wrapper" id="invitationWrapper">
+			
+            <button class="music-button" id="musicButton" type="button" aria-label="Pausar o reproducir música">❚❚</button>
+
+            <!-- FLORES DECORATIVAS PARAMETRIZABLES -->
+            <img class="corner-flower flower-top-left" src="assets/images/flores-arriba.png" alt="" aria-hidden="true">
+            <img class="corner-flower flower-bottom-right" src="assets/images/flores-abajo.png" alt="" aria-hidden="true">
+
+            <div class="petal-rain" aria-hidden="true">
+                <span class="falling-petal"></span>
+                <span class="falling-petal"></span>
+                <span class="falling-petal"></span>
+                <span class="falling-petal"></span>
+                <span class="falling-petal"></span>
+                <span class="falling-petal"></span>
+                <span class="falling-petal"></span>
+                <span class="falling-petal"></span>
+            </div>
+
+            <span class="petal petal-1"></span>
+            <span class="petal petal-2"></span>
+            <span class="petal petal-3"></span>
+            <span class="petal petal-4"></span>
+
+            <section class="content">
+                <!-- TEXTO PARAMETRIZABLE: etiqueta principal -->
+                <div class="badge">¡Nos casamos!</div>
+
+                <!-- TEXTO PARAMETRIZABLE: portada interna, nombres y mensaje principal -->
+                <section class="hero">
+                    <p class="small-title">Invitación de boda</p>
+                    <h1>
+            Camila
+            <span class="ampersand">&</span>
+            Daniel
+          </h1>
+
+                    <img class="hero-rings-icon" src="assets/icons/anillos.png" alt="" aria-hidden="true" width="106" height="106">
+
+                    <!-- TEXTO PARAMETRIZABLE: fecha principal -->
+                    <section class="date-card" aria-label="Fecha de la boda">
+                        <div class="date-row">Martes</div>
+                        <div class="date-main">24 Agosto del 2027</div>
+                    </section>
+                </section>
+
+                <!-- Ramas divisoras -->
+
+                <div class="wedding-divider" aria-hidden="true">
+                    <svg viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+                        <path class="divider-line" d="M25 35 C70 20, 95 42, 130 30 C165 18, 190 42, 235 35" />
+
+                        <circle class="divider-dot" cx="130" cy="30" r="4" />
+
+                        <path class="divider-leaf" d="M102 28 C94 16, 82 17, 78 29 C90 31, 98 33, 102 28 Z" />
+                        <path class="divider-leaf" d="M158 28 C166 16, 178 17, 182 29 C170 31, 162 33, 158 28 Z" />
+
+                        <path class="divider-leaf small" d="M118 24 C113 15, 105 16, 102 25 C111 27, 116 28, 118 24 Z" />
+                        <path class="divider-leaf small" d="M142 24 C147 15, 155 16, 158 25 C149 27, 144 28, 142 24 Z" />
+                    </svg>
+                </div>
+                <!-- Fin Ramas divisoras -->
+
+                <!-- TEXTO PARAMETRIZABLE: frase romántica principal -->
+                <p class="quote">
+                    “Con la bendición de Dios y el amor de nuestras familias, queremos compartir contigo el inicio de nuestra nueva historia.”
+                </p>
+
+                <!-- SECCIÓN PARAMETRIZABLE: foto y frase antes de detalles del evento -->
+                <section class="section photo-section" data-section="story">
+                    <div class="photo-card">
+                        <img src="assets/images/nuestrahistoria.webp" alt="Foto de los novios" width="1024" height="1536" loading="lazy" decoding="async" />
+                        <div class="photo-message">
+                            <h2>Nuestra historia</h2>
+                            <p>Hay momentos que se vuelven eternos cuando los compartimos con las personas que amamos.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ramas divisoras -->
+
+                <div class="wedding-divider" aria-hidden="true">
+                    <svg viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+                        <path class="divider-line" d="M25 35 C70 20, 95 42, 130 30 C165 18, 190 42, 235 35" />
+
+                        <circle class="divider-dot" cx="130" cy="30" r="4" />
+
+                        <path class="divider-leaf" d="M102 28 C94 16, 82 17, 78 29 C90 31, 98 33, 102 28 Z" />
+                        <path class="divider-leaf" d="M158 28 C166 16, 178 17, 182 29 C170 31, 162 33, 158 28 Z" />
+
+                        <path class="divider-leaf small" d="M118 24 C113 15, 105 16, 102 25 C111 27, 116 28, 118 24 Z" />
+                        <path class="divider-leaf small" d="M142 24 C147 15, 155 16, 158 25 C149 27, 144 28, 142 24 Z" />
+                    </svg>
+                </div>
+                <!-- Fin Ramas divisoras -->
+
+
+                <!-- SECCIÓN PARAMETRIZABLE: detalles del evento, lugar, fecha, hora y ubicación -->
+                <section class="section event-details-section" data-section="event">
+                    <div class="final-names">
+                        Camila
+                        <span>&</span> Daniel
+                    </div>
+
+                    <p>
+                        Con el tiempo descubrimos que nuestros caminos no solo se encontraron, sino que avanzaban en la misma dirección. Hoy, con un amor que ha crecido con calma y certeza, hemos decidido unir nuestras vidas para siempre.
+                    </p>
+
+                    <p class="event-intro">
+                        Tenemos el agrado de invitarte a nuestro matrimonio
+                    </p>
+
+                    <div class="event-large-list">
+                        <div class="event-large-card">
+                            <div class="event-large-icon">
+                                <img src="assets/icons/calendar.png" alt="" aria-hidden="true" width="34" height="34">
+                            </div>
+                            <div class="event-large-content">
+                                <p class="event-label">Fecha</p>
+                                <h3>24 Agosto 2027</h3>
+                            </div>
+                        </div>
+
+                        <div class="event-large-card">
+                            <div class="event-large-icon">
+                                <img src="assets/icons/iglesia.png" alt="" aria-hidden="true" width="34" height="34">
+                            </div>
+                            <div class="event-large-content">
+                                <p class="event-label">Ceremonia Religiosa</p>
+                                <h3>Iglesia Virgen de Bronce</h3>
+                                <p><strong>Hora:</strong> 17:00 pm</p>
+                            </div>
+                        </div>
+
+                        <div class="event-large-card">
+                            <div class="event-large-icon">
+                                <img src="assets/icons/ubicacion.png" alt="" aria-hidden="true" width="34" height="34">
+                            </div>
+                            <div class="event-large-content">
+                                <p class="event-label">Recepción</p>
+                                <h3>Salón de recepciones Sendero del Colibrí</h3>
+                                <p>Italia 1-39 y Unión Soviética (Sector Capulispamba)</p>
+                                <p><strong>Hora:</strong> 19H00 pm</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="actions button-location">
+                        <button class="button button-secondary" id="openMapModal" type="button">
+                            Ver Ubicación Recepción
+                        </button>
+                    </div>
+
+                    <a class="button button-secondary calendar-link" id="calendarLink" data-section="event" href="#" target="_blank" rel="noopener">Agregar fecha al calendario</a>
+
+                </section>
+
+                    <!-- Ramas divisoras -->
+
+                    <div class="wedding-divider" aria-hidden="true">
+                        <svg viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+                            <path class="divider-line" d="M25 35 C70 20, 95 42, 130 30 C165 18, 190 42, 235 35" />
+
+                            <circle class="divider-dot" cx="130" cy="30" r="4" />
+
+                            <path class="divider-leaf" d="M102 28 C94 16, 82 17, 78 29 C90 31, 98 33, 102 28 Z" />
+                            <path class="divider-leaf" d="M158 28 C166 16, 178 17, 182 29 C170 31, 162 33, 158 28 Z" />
+
+                            <path class="divider-leaf small" d="M118 24 C113 15, 105 16, 102 25 C111 27, 116 28, 118 24 Z" />
+                            <path class="divider-leaf small" d="M142 24 C147 15, 155 16, 158 25 C149 27, 144 28, 142 24 Z" />
+                        </svg>
+                    </div>
+                    <!-- Fin Ramas divisoras -->
+
+                    <!-- SECCIÓN PARAMETRIZABLE: contador regresivo -->
+                    <section class="section countdown-section" data-section="countdown">
+                        <h2> ¡Se acerca el gran día!</h2>
+                        <p>Junto a ti empezamos la cuenta regresiva</p>
+                        <div class="countdown" id="countdown">
+                            <div><strong id="days">00</strong><span>Días</span></div>
+                            <div><strong id="hours">00</strong><span>Horas</span></div>
+                            <div><strong id="minutes">00</strong><span>Min</span></div>
+                            <div><strong id="seconds">00</strong><span>Seg</span></div>
+                        </div>
+                    </section>
+
+                    <!-- SECCIÓN PARAMETRIZABLE: segunda foto o bloque visual -->
+                    <section class="section photo-section" data-section="memory">
+                        <div class="photo-card">
+                            <img src="assets/images/undiapararecordar.webp" alt="Foto especial de la boda" width="1024" height="1536" loading="lazy" decoding="async" />
+                            <div class="photo-message">
+                                <h2>Un día para recordar</h2>
+                                <p>Queremos vivir este momento contigo y guardar cada sonrisa como parte de nuestra historia.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECCIÓN PARAMETRIZABLE: código de vestimenta -->
+                    <section class="section" data-section="dressCode">
+                        <h2>Código de vestimenta</h2>
+                        <div class="dress-icons" aria-hidden="true">
+                            <div class="dress-card">
+                                <span class="dress-icon">
+                <div class="event-large-icon">
+                  <img src="assets/icons/smoking.png" alt="" aria-hidden="true" width="34" height="34">
+                </div>
+              </span>
+                                <strong>Caballeros</strong>
+                            </div>
+                            <div class="dress-card">
+                                <span class="dress-icon">
+                <div class="event-large-icon">
+                  <img src="assets/icons/vestido.png" alt="" aria-hidden="true" width="34" height="34">
+                </div>
+              </span>
+                                <strong>Damas</strong>
+                            </div>
+                        </div>
+                        <p>
+                            Queremos que ese día te veas increíble. El color blanco estará reservado especialmente para la novia, por lo que te pedimos con cariño evitar usarlo. Agradecemos tu comprensión y tu ayuda para hacer este momento aún más especial.
+                        </p>
+                    </section>
+
+                    <!-- SECCIÓN PARAMETRIZABLE: regalos y datos bancarios -->
+
+                    <section class="section gift-section" data-section="gifts">
+                        <div class="gift-visual" aria-hidden="true">
+                            <div class="dress-card gift-dress-card">
+                                <span class="dress-icon gift-main-icon">
+              <div class="event-large-icon">
+                  <img src="assets/icons/regalo.png" alt="" aria-hidden="true" width="34" height="34">
+                </div>
+            </span>
+                                <strong>Regalos</strong>
+                            </div>
+                        </div>
+
+                        <p>
+                            Si desean hacernos un detalle, será recibido con mucho cariño a través de sobre cerrado o también pueden realizarlo directamente en nuestra cuenta bancaria. Lo más importante para nosotros es contar con su presencia en este día tan especial.
+                        </p>
+
+                        <div class="bank-details gift-bank-details">
+                            <div class="bank-row"><strong>Banco</strong><span>Pichincha</span></div>
+                            <div class="bank-row"><strong>Titular</strong><span>Daniel Rosendo Sánchez Perez</span></div>
+                            <div class="bank-row"><strong>Cuenta</strong><span>Ahorros · 5999999999</span></div>
+                        </div>
+                    </section>
+
+                    <!-- SECCIÓN PARAMETRIZABLE: confirmación de asistencia y enlace de WhatsApp -->
+                    <section class="section" data-section="rsvp">
+                        <h2>Confirma tu asistencia</h2>
+                        <p>Por favor confirma tu asistencia antes del 10 de agosto de 2027. Tu presencia hará este día aún más especial.</p>
+
+                        <div class="actions">
+                            <a class="button button-primary" id="whatsappLink" href="https://wa.me/593999999999?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Camila%20y%20Daniel.%20Mi%20nombre%20es%3A" target="_blank" rel="noopener">
+							Confirmar por WhatsApp
+							</a>
+                        </div>
+                    </section>
+
+                    <!-- SECCIÓN PARAMETRIZABLE: mensaje final de despedida -->
+                    <section class="section final-message" data-section="closing">
+                        <div class="final-names">
+                            Camila
+                            <span>&</span> Daniel
+                        </div>
+                        <p>
+                            No imaginamos este día sin ti. Prepárate para celebrar, brindar, bailar y vivir momentos que quedarán en la memoria. Nos llena de alegría poder compartirlos contigo.
+                        </p>
+                        <p class="final-highlight">¡Te esperamos!</p>
+                    </section>
+
+                    <!-- SECCIÓN PARAMETRIZABLE: imagen final de cierre -->
+                    <section class="section photo-section" data-section="closingImage">
+                        <div class="photo-card">
+                            <img src="assets/images/final.webp" alt="Imagen final de la invitación" width="1024" height="1536" loading="lazy" decoding="async" />
+                            <div class="photo-message">
+                                <h2>Gracias por acompañarnos</h2>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer class="footer">
+						<!-- MARCA PARAMETRIZABLE DE LA PLANTILLA -->
+							<div class="template-brand">
+							<span>Invitación digital por</span>
+							<img src="assets/images/logoencanto.png" alt="Marca de la plantilla">
+						</div>
+                    </footer>
+            </section>
+        </div>
+    </main>
+
+    <dialog class="image-viewer" id="imageViewer" aria-label="Galería de fotografías">
+        <button class="image-viewer-close" id="closeImageViewer" type="button" aria-label="Cerrar fotografía">×</button>
+        <div class="image-viewer-content">
+            <button class="image-viewer-arrow" id="previousImage" type="button" aria-label="Fotografía anterior">‹</button>
+            <figure>
+                <img id="imageViewerPhoto" alt="">
+                <figcaption id="imageViewerCaption"></figcaption>
+            </figure>
+            <button class="image-viewer-arrow" id="nextImage" type="button" aria-label="Fotografía siguiente">›</button>
+        </div>
+    </dialog>
+
+    <!-- POPUP PARAMETRIZABLE: ubicación en Google Maps -->
+    <div class="map-modal" id="mapModal" role="dialog" aria-modal="true" aria-label="Ubicación del evento" aria-hidden="true">
+        <div class="map-modal-content">
+            <button class="map-modal-close" id="closeMapModal" type="button" aria-label="Cerrar mapa">
+                ×
+            </button>
+            <div class="map-frame-wrapper">
+                <iframe id="mapIframe" title="Mapa de la ubicación del evento" src="" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <a class="button button-primary map-open-link" id="openGoogleMaps" href="#" target="_blank" rel="noopener">
+          Abrir en Google Maps
+        </a>
+        </div>
+    </div>
+
+    <script src="config/wedding.js"></script>
+    <script src="config/theme.js"></script>
+    <script src="config/sections.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+
+</html>
